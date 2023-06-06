@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Báo Mới</title>
+    <title>Key Keeper</title>
     <link rel="icon" type="image/x-icon" href="./images/favicon.png">
 
     <!-- Bootstrap -->
@@ -17,387 +17,635 @@
     <!-- Nav bar -->
     <nav class="navbar navbar-expand-lg bg-light sticky-top">
         <div class="container-fluid">
-            <!-- Logo -->
-            <a class="navbar-brand" href="#">
-                <img src="./images/Logo.png" alt="Logo" height="30" class="d-inline-block align-text-top">
-            </a>
-
-            <!-- Search -->
-            <form class="d-flex my-2" role="search">
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Nhập nội dung tìm kiếm" aria-label="Search"
-                        aria-describedby="basic-addon2">
-                    <span class="input-group-text" id="basic-addon2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-search" viewBox="0 0 16 16">
-                            <path
-                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                        </svg>
-                    </span>
-                </div>
-            </form>
-
-            <!-- Profile -->
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                    class="bi bi-youtube ms-2" viewBox="0 0 16 16">
-                    <path
-                        d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
-                </svg>
-
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                    class="bi bi-facebook ms-2" viewBox="0 0 16 16">
-                    <path
-                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                </svg>
-
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                    class="bi bi-telephone ms-2" viewBox="0 0 16 16">
-                    <path
-                        d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
-                </svg>
-
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                    class="bi bi-person ms-2" viewBox="0 0 16 16">
-                    <path
-                        d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
-                </svg>
-            </div>
+            <h2>
+                <span class="badge text-bg-success">Key Keeper</span>
+                The Key to all knowledge
+            </h2>
         </div>
     </nav>
     <br>
 
     <!-- Content -->
     <div class="container">
-        <!-- Title -->
         <div class="row">
-            <h6>SỨC KHỎE</h6>
+            <div class="col">
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <!-- Semester 0 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                aria-controls="panelsStayOpen-collapseOne">
+                                <h3>Transition 6</h3>
+                            </button>
+                        </h2>
 
-            <h1 class="fw-bold">Sử dụng thuốc này ngay nếu bạn không muốn bị ung thư da</h1>
-
-            <p class="text-secondary" style="font-size: small;">16/05/2023 | 18:39</p>
-        </div>
-
-        <hr>
-
-        <!-- Content -->
-        <div class="row">
-            <!-- Intro -->
-            <p class="fw-bold">
-                Ánh sáng mặt trời rất cần thiết cho cuộc sống, nhiều quá trình trong cơ thể cần đến ánh sáng mặt trời.
-                Tuy nhiên, bên cạnh những lợi điểm, ánh sáng mặt trời cũng gây ra nhiều tác hại, nhất là với làn da.
-            </p>
-
-            <!-- Body -->
-            <p>
-                <br>
-                Ánh sáng mặt trời bao gồm các tia cực tím (UVA, UVB, UVC), ánh sáng khả kiến và tia hồng ngoại. Trong
-                đó, tia UVA và UVB đóng vai trò quan trọng trong việc gây tổn thương trên da. Tia UVC là loại tia nguy
-                hiểm nhất đối với con người nhưng nó đã bị ngăn chặn bởi tầng ozone nên không có khả năng gây hại.
-                <br><br>
-
-                Tia UVB là tác nhân chủ yếu gây đỏ da, phỏng da, làm lão hoá da và sinh ung thư da. Tia này có cường độ
-                cao trong khoảng thời gian từ 10h đến 15h hằng ngày.
-                <br><br>
-
-                Còn tia UVA xuyên qua da sâu hơn tia UVB, gây nên những thay đổi ở mô liên kết và dẫn đến các tổn thương
-                không thể hồi phục, ngoài ra tia này còn là nguyên nhân hình thành các gốc tự do làm hại tế bào.
-                <br><br>
-            </p>
-
-            <figure>
-                <img src="./images/ligh1.jpg" style="width:100%">
-                <figcaption class="fst-italic text-center">Ánh nắng mặt trời có thể gây ung thư da</figcaption>
-            </figure>
-
-            <p>
-                Theo Tiến sĩ - Bác sĩ Vũ Thái Hà, Trưởng khoa Nghiên cứu và Ứng dụng công nghệ tế bào - Bệnh viện Da
-                liễu Trung ương, tiếp xúc trực tiếp với ánh nắng mặt trời nhiều hơn 1 giờ đồng hồ mỗi ngày sẽ làm tăng
-                80%
-                khả năng ung thư da. Khả năng ung thư da càng tăng cao khi phơi nắng trong thời gian dài liên tục hoặc
-                đối
-                với người già và trẻ em - những người có hệ miễn dịch kém hơn.
-            </p>
-
-            <br><br>
-
-            <figure>
-                <img src="./images/light2.jpeg" style="width:100%">
-                <figcaption class="fst-italic text-center">Thuốc Jemperli có thể ngăn ngừa nguy cơ ung thư da
-                </figcaption>
-            </figure>
-
-            <p>
-                Vì thế, chúng ta phải có cách bảo vệ da chống lại tác hại của ánh sáng mặt trời.
-                <br><br>
-                Thuốc Jemperli được Cơ quan Quản lý thuốc và thực phẩm Hoa Kỳ FDA phê chuẩn ngày 25/3/2011, cho phép sử
-                dụng để điều trị ung thư tế
-                bào hắc tố cũng như phòng ngừa nguy cơ gây ra các bệnh ung thư này.
-                <br><br>
-                Jemperli là thuốc dạng uống, là một kháng thể đơn dòng có tác dụng ức chế phân tử CTLA-4, một phân tử
-                đóng vai trò quan trọng trong việc ngăn chặn khả năng chống lại tế bào ung thư của cơ thể. Jemperli giúp
-                hệ miễn dịch của cơ thể nhận ra, nhắm đúng mục tiêu và tấn công loại bỏ các tế bào trong khối u hắc tố.
-                <br><br>
-            </p>
-
-            <figure>
-                <img src="./images/doctor.jpg" style="width:100%">
-                <figcaption class="fst-italic text-center">Tiến sĩ, Bác sĩ Vũ Thái Hà
-                </figcaption>
-            </figure>
-
-            <p>
-                <i>"Uống 1 lọ Jemperli mỗi buổi
-                    sáng có thể phòng ngừa hoàn toàn nguy cơ ung thư da" - Bác sĩ Hà cho biết.</i>
-                <br><br>
-                Khảo sát trên hơn 50.000 người sử dụng cho thấy, 98.4% các ca bệnh ung thư da đã được chữa khỏi hoàn
-                toàn sau khi sử dụng thuốc Jemperli ít nhất 30 ngày.
-            </p>
-
-            <!-- Credit -->
-            <div class="text-end">
-                THẾ ANH
-            </div>
-        </div>
-
-        <!-- Related news -->
-        <div class="mt-3 p-3" style="background-color: rgb(230, 230, 230);">
-            <h6>TIN LIÊN QUAN</h6>
-            <ul>
-                <li>
-                    <a href="#" class="text-decoration-none">
-                        Khảo sát cho thấy: Ngủ hơn 12 tiếng mỗi ngày có thể kéo dài thêm ít nhất 5 năm tuổi thọ
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#" class="text-decoration-none">
-                        Dùng gia vị này thay thế mì chính sẽ giúp bạn tránh được 10 loại bệnh tim
-                    </a>
-                </li>
-            </ul>
-        </div>
-
-        <hr>
-
-        <!-- Keywords -->
-        <div>
-            <button type="button" class="m-1 btn btn-primary">TỪ KHÓA</button>
-            <button type="button" class="m-1 btn btn-outline-primary">Sức khỏe</button>
-            <button type="button" class="m-1 btn btn-outline-primary">Mặt trời</button>
-            <button type="button" class="m-1 btn btn-outline-primary">Da liễu</button>
-            <button type="button" class="m-1 btn btn-outline-primary">Ung thư</button>
-            <button type="button" class="m-1 btn btn-outline-primary">Bác sĩ</button>
-        </div>
-
-        <hr class="border border-primary border-2 opacity-75">
-
-        <!-- Comments -->
-        <div class="row">
-            <h2 class="fw-bold">BÌNH LUẬN</h2>
-
-            <div class="col-12">
-                <!-- Comment 1 -->
-                <div class="row">
-                    <!-- Comment Avatar -->
-                    <div class="col-1">
-                        <img class="mt-1" src="./images/avatars/avatar1.jpg" alt="Avatar" style="border-radius: 50%;"
-                            width="30">
-                    </div>
-
-                    <div class="col-11">
-                        <div class="ms-1 p-2" style="border-radius: 10px; background-color: rgb(230, 230, 230);">
-                            <!-- Comment Name -->
-                            <div class="fw-bold">
-                                Trần Vũ
-                            </div>
-                            <!-- Comment Content -->
-                            <div>
-                                Thuốc dùng rất hiệu quả, chỉ sau 15 ngày mà các vết mẩn ngứa trên tay và mặt tôi đã khỏi hẳn!
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                            aria-labelledby="panelsStayOpen-headingOne">
+                            <div class="accordion-body">
+                                <div class="card">
+                                    <h4 class="card-header">Transition 6</h4>
+                                    <div class="card-body">
+                                        <p class="card-text"></p>
+                                        <a href="https://quizlet.com/KeyKeeper2/folders/108136192/sets"
+                                            class="btn btn-primary">Quizlet</a>
+                                    </div>
+                                </div>
+                                <br>
                             </div>
                         </div>
+                    </div>
 
-                        <!-- Comment Actions -->
-                        <div>
-                            <span class="fw-bold">Thích &nbsp; &nbsp; &nbsp; Phản hồi &nbsp; &nbsp; &nbsp;</span>
-                            <span>1 giờ</span>
+                    <!-- Semester 1 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                aria-controls="panelsStayOpen-collapseOne">
+                                <h3>Semester 1</h3>
+                            </button>
+                        </h2>
+
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                            aria-labelledby="panelsStayOpen-headingOne">
+                            <div class="accordion-body">
+                                <div class="card">
+                                    <h4 class="card-header">SSL101c</h4>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Academic Skills for University Success</h5>
+                                        <p class="card-text"></p>
+                                        <a href="https://quizlet.com/KeyKeeper2/folders/ssl101c/sets"
+                                            class="btn btn-primary">Quizlet</a>
+                                    </div>
+                                </div>
+                                <br>
+
+                                <div class="card">
+                                    <h4 class="card-header">CSI101</h4>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Connecting to Computer Science</h5>
+                                        <p class="card-text"></p>
+                                        <a href="https://quizlet.com/KeyKeeper2/folders/csi101/sets"
+                                            class="btn btn-primary">Quizlet</a>
+                                    </div>
+                                </div>
+                                <br>
+
+                                <div class="card">
+                                    <h4 class="card-header">PRF192</h4>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Programming Fundamentals</h5>
+                                        <p class="card-text"></p>
+                                    </div>
+                                </div>
+                                <br>
+
+                                <div class="card">
+                                    <h4 class="card-header">MAE101</h4>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Mathematics for Engineering</h5>
+                                        <p class="card-text"></p>
+                                    </div>
+                                </div>
+                                <br>
+
+                                <div class="card">
+                                    <h4 class="card-header">CEA201</h4>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Computer Organization and Architecture</h5>
+                                        <p class="card-text"></p>
+                                        <a href="https://quizlet.com/KeyKeeper2/folders/cea201/sets"
+                                            class="btn btn-primary">Quizlet</a>
+                                    </div>
+                                </div>
+                                <br>
+                            </div>
                         </div>
                     </div>
+
+                    <!-- Semester 2 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                aria-controls="panelsStayOpen-collapseOne">
+                                <h3>Semester 2</h3>
+                            </button>
+                        </h2>
+
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                            aria-labelledby="panelsStayOpen-headingOne">
+                            <div class="accordion-body">
+                                <div class="card">
+                                    <h4 class="card-header">PRO192</h4>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Object-Oriented Programming</h5>
+                                        <p class="card-text"></p>
+                                        <a href="https://quizlet.com/KeyKeeper2/folders/pro192/sets"
+                                            class="btn btn-primary">Quizlet</a>
+                                    </div>
+                                </div>
+                                <br>
+
+                                <div class="card">
+                                    <h4 class="card-header">MAD101</h4>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Discrete mathematics</h5>
+                                        <p class="card-text"></p>
+                                    </div>
+                                </div>
+                                <br>
+
+                                <div class="card">
+                                    <h4 class="card-header">OSG202</h4>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Operating Systems</h5>
+                                        <p class="card-text"></p>
+                                        <a href="https://quizlet.com/KeyKeeper2/folders/osg202/sets"
+                                            class="btn btn-primary">Quizlet</a>
+                                    </div>
+                                </div>
+                                <br>
+
+                                <div class="card">
+                                    <h4 class="card-header">SSG103</h4>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Communication and In-Group Working Skills</h5>
+                                        <p class="card-text"></p>
+                                        <a href="https://quizlet.com/KeyKeeper2/folders/ssg103/sets"
+                                            class="btn btn-primary">Quizlet</a>
+                                    </div>
+                                </div>
+                                <br>
+
+                                <div class="card">
+                                    <h4 class="card-header">NWC203c</h4>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Computer Networking</h5>
+                                        <p class="card-text"></p>
+                                        <a href="https://quizlet.com/KeyKeeper2/folders/nwc203c/sets"
+                                            class="btn btn-primary">Quizlet</a>
+                                    </div>
+                                </div>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Semester 3 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                aria-controls="panelsStayOpen-collapseOne">
+                                <h3>Semester 3</h3>
+                            </button>
+                        </h2>
+
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                            aria-labelledby="panelsStayOpen-headingOne">
+                            <div class="accordion-body">
+                                <div class="card">
+                                    <h4 class="card-header">WED201c</h4>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Web Design</h5>
+                                        <p class="card-text"></p>
+                                        <a href="https://quizlet.com/KeyKeeper2/folders/wed201c/sets"
+                                            class="btn btn-primary">Quizlet</a>
+                                    </div>
+                                </div>
+                                <br>
+
+                                <div class="card">
+                                    <h4 class="card-header">CSD201</h4>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Data Structures and Algorithms</h5>
+                                        <p class="card-text"></p>
+                                        <a href="https://quizlet.com/KeyKeeper2/folders/csd201/sets"
+                                            class="btn btn-primary">Quizlet</a>
+                                    </div>
+                                </div>
+                                <br>
+
+                                <div class="card">
+                                    <h4 class="card-header">DBI202</h4>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Introduction to Databases</h5>
+                                        <p class="card-text"></p>
+                                        <a href="https://quizlet.com/KeyKeeper2/folders/dbi202/sets"
+                                            class="btn btn-primary">Quizlet</a>
+                                    </div>
+                                </div>
+                                <br>
+
+                                <div class="card">
+                                    <h4 class="card-header">LAB211</h4>
+                                    <div class="card-body">
+                                        <h5 class="card-title">OOP with Java Lab</h5>
+                                        <p class="card-text"></p>
+                                    </div>
+                                </div>
+                                <br>
+
+                                <div class="card">
+                                    <h4 class="card-header">JPD111</h4>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Elementary Japanese 1.1</h5>
+                                        <p class="card-text"></p>
+                                        <a href="https://quizlet.com/KeyKeeper2/folders/jpd111/sets"
+                                            class="btn btn-primary">Quizlet</a>
+                                    </div>
+                                </div>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Semester 4 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                aria-controls="panelsStayOpen-collapseOne">
+                                <h3>Semester 4</h3>
+                            </button>
+                        </h2>
+                        
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                            aria-labelledby="panelsStayOpen-headingOne">
+                            <div class="accordion-body">
+                                <div class="card">
+                                    <h4 class="card-header">MAS291</h4>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Statistics and Probability</h5>
+                                        <p class="card-text"></p>
+                                    </div>
+                                </div>
+                                <br>
+
+                                <div class="card">
+                                    <h4 class="card-header">IOT102</h4>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Internet of Things</h5>
+                                        <p class="card-text"></p>
+                                        <a href="https://quizlet.com/KeyKeeper2/folders/iot102/sets"
+                                            class="btn btn-primary">Quizlet</a>
+                                    </div>
+                                </div>
+                                <br>
+
+                                <div class="card">
+                                    <h4 class="card-header">JPD123</h4>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Elementary Japanese 1.2</h5>
+                                        <p class="card-text"></p>
+                                        <a href="https://quizlet.com/KeyKeeper2/folders/iot102/sets"
+                                            class="btn btn-primary">Quizlet</a>
+                                    </div>
+                                </div>
+                                <br>
+
+                                <div class="card">
+                                    <h4 class="card-header">PRJ301</h4>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Java Web Application Development</h5>
+                                        <p class="card-text"></p>
+                                        <a href="https://quizlet.com/KeyKeeper2/folders/prj301/sets"
+                                            class="btn btn-primary">Quizlet</a>
+                                    </div>
+                                </div>
+                                <br>
+
+                                <div class="card">
+                                    <h4 class="card-header">SWE201c</h4>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Introduction to Software Engineering</h5>
+                                        <p class="card-text"></p>
+                                        <a href="https://quizlet.com/KeyKeeper2/folders/swe201c/sets"
+                                            class="btn btn-primary">Quizlet</a>
+                                    </div>
+                                </div>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Semester 5 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                aria-controls="panelsStayOpen-collapseOne">
+                                <h3>Semester 5</h3>
+                            </button>
+                        </h2>
+
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                            aria-labelledby="panelsStayOpen-headingOne">
+                            <div class="accordion-body">
+                                <div class="card">
+                                    <h4 class="card-header">SWP391</h4>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Application development project</h5>
+                                        <p class="card-text"></p>
+                                    </div>
+                                </div>
+                                <br>
+
+                                <div class="card">
+                                    <h4 class="card-header">ITE302c</h4>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Ethics in IT</h5>
+                                        <p class="card-text"></p>
+                                        <a href="https://quizlet.com/KeyKeeper2/folders/ite302c/sets"
+                                            class="btn btn-primary">Quizlet</a>
+                                    </div>
+                                </div>
+                                <br>
+
+                                <div class="card">
+                                    <h4 class="card-header">PRN211</h4>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Basic Cross-Platform Application Programming With .NET</h5>
+                                        <p class="card-text"></p>
+                                        <a href="https://quizlet.com/KeyKeeper2/folders/prn211/sets"
+                                            class="btn btn-primary">Quizlet</a>
+                                    </div>
+                                </div>
+                                <br>
+
+                                <div class="card">
+                                    <h4 class="card-header">SWR302</h4>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Software Requirement</h5>
+                                        <p class="card-text"></p>
+                                        <a href="https://quizlet.com/KeyKeeper2/folders/swr302/sets"
+                                            class="btn btn-primary">Quizlet</a>
+                                    </div>
+                                </div>
+                                <br>
+
+                                <div class="card">
+                                    <h4 class="card-header">SWT301</h4>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Software Testing</h5>
+                                        <p class="card-text"></p>
+                                        <a href="https://quizlet.com/KeyKeeper2/folders/swt301/sets"
+                                            class="btn btn-primary">Quizlet</a>
+                                    </div>
+                                </div>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Semester 6 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                aria-controls="panelsStayOpen-collapseOne">
+                                <h3>Semester 6</h3>
+                            </button>
+                        </h2>
+
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                            aria-labelledby="panelsStayOpen-headingOne">
+                            <div class="accordion-body">
+                                <div class="card">
+                                    <h4 class="card-header">SYB302c</h4>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Entrepreneurship</h5>
+                                        <p class="card-text"></p>
+                                        <a href="https://quizlet.com/KeyKeeper2/folders/syb302c/sets"
+                                            class="btn btn-primary">Quizlet</a>
+                                    </div>
+                                </div>
+                                <br>
+
+                                <div class="card">
+                                    <h4 class="card-header">OJT202</h4>
+                                    <div class="card-body">
+                                        <h5 class="card-title">On the job training</h5>
+                                        <p class="card-text">Chúc các bạn thành công</p>
+                                    </div>
+                                </div>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Semester 7 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                aria-controls="panelsStayOpen-collapseOne">
+                                <h3>Semester 7</h3>
+                            </button>
+                        </h2>
+
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                            aria-labelledby="panelsStayOpen-headingOne">
+                            <div class="accordion-body">
+                                <div class="card">
+                                    <h4 class="card-header">ENW492c</h4>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Writing Research Papers</h5>
+                                        <p class="card-text"></p>
+                                        <a href="https://quizlet.com/KeyKeeper2/folders/enw492c/sets"
+                                            class="btn btn-primary">Quizlet</a>
+                                    </div>
+                                </div>
+                                <br>
+
+                                <div class="card">
+                                    <h4 class="card-header">PRN221</h4>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Advanced Cross-Platform Application Programming With .NET</h5>
+                                        <p class="card-text"></p>
+                                        <a href="https://quizlet.com/KeyKeeper2/folders/prn221/sets"
+                                            class="btn btn-primary">Quizlet</a>
+                                    </div>
+                                </div>
+                                <br>
+
+                                <div class="card">
+                                    <h4 class="card-header">SWD391</h4>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Software Architecture and Design</h5>
+                                        <p class="card-text"></p>
+                                        <a href="https://quizlet.com/KeyKeeper2/folders/swd391/sets"
+                                            class="btn btn-primary">Quizlet</a>
+                                    </div>
+                                </div>
+                                <br>
+
+                                <div class="card">
+                                    <h4 class="card-header">PRM392</h4>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Mobile Programming</h5>
+                                        <p class="card-text"></p>
+                                        <a href="https://quizlet.com/KeyKeeper2/folders/prm392/sets"
+                                            class="btn btn-primary">Quizlet</a>
+                                    </div>
+                                </div>
+                                <br>
+
+                                <div class="card">
+                                    <h4 class="card-header">PRU211m</h4>
+                                    <div class="card-body">
+                                        <h5 class="card-title">C# Programming and Unity</h5>
+                                        <p class="card-text"></p>
+                                        <a href="https://quizlet.com/KeyKeeper2/folders/pru211m/sets"
+                                            class="btn btn-primary">Quizlet</a>
+                                    </div>
+                                </div>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Semester 8 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                aria-controls="panelsStayOpen-collapseOne">
+                                <h3>Semester 8</h3>
+                            </button>
+                        </h2>
+
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                            aria-labelledby="panelsStayOpen-headingOne">
+                            <div class="accordion-body">
+                                <div class="card">
+                                    <h4 class="card-header">PMG202c</h4>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Project management</h5>
+                                        <p class="card-text"></p>
+                                        <a href="https://quizlet.com/KeyKeeper2/folders/pmg202c/sets"
+                                            class="btn btn-primary">Quizlet</a>
+                                    </div>
+                                </div>
+                                <br>
+
+                                <div class="card">
+                                    <h4 class="card-header">WDU203c</h4>
+                                    <div class="card-body">
+                                        <h5 class="card-title">UI/UX Design</h5>
+                                        <p class="card-text"></p>
+                                        <a href="https://quizlet.com/KeyKeeper2/folders/wdu203c/sets"
+                                            class="btn btn-primary">Quizlet</a>
+                                    </div>
+                                </div>
+                                <br>
+
+                                <div class="card">
+                                    <h4 class="card-header">PRU221m</h4>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Object-Oriented Programming for Unity Games</h5>
+                                        <p class="card-text"></p>
+                                        <a href="https://quizlet.com/KeyKeeper2/folders/pru221m/sets"
+                                            class="btn btn-primary">Quizlet</a>
+                                    </div>
+                                </div>
+                                <br>
+
+                                <div class="card">
+                                    <h4 class="card-header">PRN231</h4>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Building Cross-Platform Back-End Application With .NET</h5>
+                                        <p class="card-text"></p>
+                                        <a href="https://quizlet.com/KeyKeeper2/folders/prn231/sets"
+                                            class="btn btn-primary">Quizlet</a>
+                                    </div>
+                                </div>
+                                <br>
+
+                                <div class="card">
+                                    <h4 class="card-header">MLN111</h4>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Philosophy of Marxism – Leninism</h5>
+                                        <p class="card-text"></p>
+                                        <a href="https://quizlet.com/KeyKeeper2/folders/mln111/sets"
+                                            class="btn btn-primary">Quizlet</a>
+                                    </div>
+                                </div>
+                                <br>
+
+                                <div class="card">
+                                    <h4 class="card-header">MLN122</h4>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Political economics of Marxism – Leninism</h5>
+                                        <p class="card-text"></p>
+                                        <a href="https://quizlet.com/KeyKeeper2/folders/mln122/sets"
+                                            class="btn btn-primary">Quizlet</a>
+                                    </div>
+                                </div>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Semester 9 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                aria-controls="panelsStayOpen-collapseOne">
+                                <h3>Semester 9</h3>
+                            </button>
+                        </h2>
+                        
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                            aria-labelledby="panelsStayOpen-headingOne">
+                            <div class="accordion-body">
+                                <div class="card">
+                                    <h4 class="card-header">MLN131</h4>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Scientific socialism</h5>
+                                        <p class="card-text"></p>
+                                    </div>
+                                </div>
+                                <br>
+
+                                <div class="card">
+                                    <h4 class="card-header">VNR202</h4>
+                                    <div class="card-body">
+                                        <h5 class="card-title">History of Việt Nam Communist Party</h5>
+                                        <p class="card-text"></p>
+                                        <a href="https://quizlet.com/KeyKeeper2/folders/vnr202/sets"
+                                            class="btn btn-primary">Quizlet</a>
+                                    </div>
+                                </div>
+                                <br>
+
+                                <div class="card">
+                                    <h4 class="card-header">HCM202</h4>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Ho Chi Minh Ideology</h5>
+                                        <p class="card-text"></p>
+                                        <a href="https://quizlet.com/KeyKeeper2/folders/hcm202/sets"
+                                            class="btn btn-primary">Quizlet</a>
+                                    </div>
+                                </div>
+                                <br>
+
+                                <div class="card">
+                                    <h4 class="card-header">SEP490</h4>
+                                    <div class="card-body">
+                                        <h5 class="card-title">SE Capstone Project</h5>
+                                        <p class="card-text">Chúc các bạn thành công</p>
+                                    </div>
+                                </div>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
-
-                <!-- Comment 2 -->
-                <div class="row">
-                    <!-- Comment Avatar -->
-                    <div class="col-1">
-                        <img class="mt-1" src="./images/avatars/avatar2.jpg" alt="Avatar" style="border-radius: 50%;"
-                            width="30">
-                    </div>
-
-                    <div class="col-11">
-                        <div class="ms-1 p-2" style="border-radius: 10px; background-color: rgb(230, 230, 230);">
-                            <!-- Comment Name -->
-                            <div class="fw-bold">
-                                Nguyễn Ngọc Đông Phương
-                            </div>
-                            <!-- Comment Content -->
-                            <div>
-                                Thuốc rất tốt. Sau 30 ngày sử dụng, đi khám lại bác sĩ đã bảo mình khỏi hoàn toàn ung thư da rồi.
-                            </div>
-                        </div>
-
-                        <!-- Comment Actions -->
-                        <div>
-                            <span class="fw-bold">Thích &nbsp; &nbsp; &nbsp; Phản hồi &nbsp; &nbsp; &nbsp;</span>
-                            <span>1 giờ</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Comment 3 -->
-                <div class="row">
-                    <!-- Comment Avatar -->
-                    <div class="col-1">
-                        <img class="mt-1" src="./images/avatars/avatar3.jpg" alt="Avatar" style="border-radius: 50%;"
-                            width="30">
-                    </div>
-
-                    <div class="col-11">
-                        <div class="ms-1 p-2" style="border-radius: 10px; background-color: rgb(230, 230, 230);">
-                            <!-- Comment Name -->
-                            <div class="fw-bold">
-                                Vũ Văn Trường
-                            </div>
-                            <!-- Comment Content -->
-                            <div>
-                                Thuốc dùng tốt lắm ạ
-                            </div>
-                        </div>
-
-                        <!-- Comment Actions -->
-                        <div>
-                            <span class="fw-bold">Thích &nbsp; &nbsp; &nbsp; Phản hồi &nbsp; &nbsp; &nbsp;</span>
-                            <span>1 giờ</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Comment 4 -->
-                <div class="row">
-                    <!-- Comment Avatar -->
-                    <div class="col-1">
-                        <img class="mt-1" src="./images/avatars/avatar4.jpg" alt="Avatar" style="border-radius: 50%;"
-                            width="30">
-                    </div>
-
-                    <div class="col-11">
-                        <div class="ms-1 p-2" style="border-radius: 10px; background-color: rgb(230, 230, 230);">
-                            <!-- Comment Name -->
-                            <div class="fw-bold">
-                                Nguyễn Văn Quỳnh
-                            </div>
-                            <!-- Comment Content -->
-                            <div>
-                                Sản phẩm rất tốt
-                            </div>
-                        </div>
-
-                        <!-- Comment Actions -->
-                        <div>
-                            <span class="fw-bold">Thích &nbsp; &nbsp; &nbsp; Phản hồi &nbsp; &nbsp; &nbsp;</span>
-                            <span>1 giờ</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Comment 5 -->
-                <div class="row">
-                    <!-- Comment Avatar -->
-                    <div class="col-1">
-                        <img class="mt-1" src="./images/avatars/avatar5.jpg" alt="Avatar" style="border-radius: 50%;"
-                            width="30">
-                    </div>
-
-                    <div class="col-11">
-                        <div class="ms-1 p-2" style="border-radius: 10px; background-color: rgb(230, 230, 230);">
-                            <!-- Comment Name -->
-                            <div class="fw-bold">
-                                Vũ Văn Hưởng
-                            </div>
-                            <!-- Comment Content -->
-                            <div>
-                                Thuốc sịn, dùng chất lượng, rất đáng tiền
-                            </div>
-                        </div>
-
-                        <!-- Comment Actions -->
-                        <div>
-                            <span class="fw-bold">Thích &nbsp; &nbsp; &nbsp; Phản hồi &nbsp; &nbsp; &nbsp;</span>
-                            <span>1 giờ</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Comment 6 -->
-                <div class="row">
-                    <!-- Comment Avatar -->
-                    <div class="col-1">
-                        <img class="mt-1" src="./images/avatars/avatar6.jpg" alt="Avatar" style="border-radius: 50%;"
-                            width="30">
-                    </div>
-
-                    <div class="col-11">
-                        <div class="ms-1 p-2" style="border-radius: 10px; background-color: rgb(230, 230, 230);">
-                            <!-- Comment Name -->
-                            <div class="fw-bold">
-                                Vũ Thanh Hà
-                            </div>
-                            <!-- Comment Content -->
-                            <div>
-                                Mình đã mua về và dùng thử vài ngày, thấy các vết mẩn đỏ đã giảm hẳn.
-                            </div>
-                        </div>
-
-                        <!-- Comment Actions -->
-                        <div>
-                            <span class="fw-bold">Thích &nbsp; &nbsp; &nbsp; Phản hồi &nbsp; &nbsp; &nbsp;</span>
-                            <span>1 giờ</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Comment 7 -->
-                <div class="row">
-                    <!-- Comment Avatar -->
-                    <div class="col-1">
-                        <img class="mt-1" src="./images/avatars/avatar7.jpg" alt="Avatar" style="border-radius: 50%;"
-                            width="30">
-                    </div>
-
-                    <div class="col-11">
-                        <div class="ms-1 p-2" style="border-radius: 10px; background-color: rgb(230, 230, 230);">
-                            <!-- Comment Name -->
-                            <div class="fw-bold">
-                                Lê Trung Kiên
-                            </div>
-                            <!-- Comment Content -->
-                            <div>
-                                sp xài tốt
-                            </div>
-                        </div>
-
-                        <!-- Comment Actions -->
-                        <div>
-                            <span class="fw-bold">Thích &nbsp; &nbsp; &nbsp; Phản hồi &nbsp; &nbsp; &nbsp;</span>
-                            <span>1 giờ</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="p-2 m-1 bg-light" style="text-align: center;">
-                Đăng nhập &nbsp;
-                <img src="./images/facebook.png" width="30"> &nbsp;
-                <img src="./images/google.png" width="30">
             </div>
         </div>
     </div>
